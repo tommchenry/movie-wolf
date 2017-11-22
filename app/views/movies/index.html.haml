@@ -1,0 +1,10 @@
+%table
+  -@movies.each do |movie|
+    %tr
+      %td
+        =movie.title
+      %td
+        =movie.year
+      %td
+        -movie.directors.each do |director|
+          =director.name
