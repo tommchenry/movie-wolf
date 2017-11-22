@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'httparty'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use postgresql as the database for Active Record
@@ -35,6 +36,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'pry'
+  gem 'annotate'
 end
 
 group :development do

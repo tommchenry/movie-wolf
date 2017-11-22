@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20171114172403) do
 
   create_table "directors", force: :cascade do |t|
     t.string   "name"
+    t.integer  "api_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -35,6 +36,7 @@ ActiveRecord::Schema.define(version: 20171114172403) do
     t.string   "description"
     t.integer  "genre_id"
     t.boolean  "owned"
+    t.boolean  "has_artwork"
     t.datetime "last_watched"
     t.datetime "created_at"
     t.datetime "updated_at"

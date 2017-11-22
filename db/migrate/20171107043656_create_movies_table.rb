@@ -6,6 +6,7 @@ class CreateMoviesTable < ActiveRecord::Migration
       t.string :description
       t.integer :genre_id
       t.boolean :owned
+      t.boolean :has_artwork
       t.datetime :last_watched
 
       t.timestamps
